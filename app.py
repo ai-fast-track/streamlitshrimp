@@ -49,7 +49,7 @@ def show_prediction(img, pred):
     fig.canvas.draw()
     fig_arr = np.array(fig.canvas.renderer.buffer_rgba())
 
-    st.image(fig_arr)
+    st.image(fig_arr, use_column_width=True)
 
 
 def run_app():
